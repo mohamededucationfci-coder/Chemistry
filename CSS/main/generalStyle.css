@@ -239,6 +239,7 @@ canvas {
   grid-template-columns: auto;
   box-shadow: 0 2px 8px #e2e2e2;
   grid-template-rows: repeat(3, auto);
+  column-gap: 10px;
 }
 
 video {

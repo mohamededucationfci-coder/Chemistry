@@ -27,7 +27,6 @@ document.forms[0].addEventListener("submit", (event) => {
         },
       );
       let data = await response.json();
-      console.log(data.message);
       if (data.status === "fail") {
         document.querySelector(".warn").textContent =
           "من فضلك ادخل بيانات صحيحة";

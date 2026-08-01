@@ -16,7 +16,9 @@ window.addEventListener("load", () => {
   }
 });
 
-document.querySelectorAll("button")[0].addEventListener("click", () => {
+const nextBtn = document.querySelector('button[type="button"]');
+
+nextBtn.addEventListener("click", () => {
   document.querySelector(".container-data").style.display = "none";
   document.querySelector(".section-two").style.display = "grid";
 });
@@ -112,7 +114,6 @@ document.forms[0].addEventListener("submit", (event) => {
         },
       );
       let data = await response.json();
-      console.log(data);
       if (data.status === "success") {
         window.localStorage.setItem("Token", data.token);
         window.location.href = "home.html";
