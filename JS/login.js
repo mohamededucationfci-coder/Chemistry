@@ -33,7 +33,7 @@ document.forms[0].addEventListener("submit", (event) => {
           "من فضلك ادخل بيانات صحيحة";
         document.querySelector(".warn").style.color = "red";
       } else {
-        window.location.href = "/HTML/home.html";
+        window.location.href = "HTML/home.html";
       }
       console.log(data);
     } catch (error) {
