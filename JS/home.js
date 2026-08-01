@@ -5,7 +5,7 @@ if (!token) {
 }
 
 async function addHeader() {
-  let response = await fetch("/Components/head.html");
+  let response = await fetch("Components/head.html");
   let header = await response.text();
   document.body.firstElementChild.innerHTML = header;
   if (window.innerWidth >= 577 && window.innerWidth <= 768) {
