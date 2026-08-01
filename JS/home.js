@@ -99,7 +99,7 @@ async function fetchOnHomeServer() {
       <h1 class="hello">${data.data.welcomeMessage}</h1>
       <p class="support">استمر في التعلم وحقق أعلى الدرجات في الكيمياء</p>
       <div class="date">
-        <img src="/Images/calendar-01.png" alt="calendar" loading="lazy" />
+        <img src="Images/calendar-01.png" alt="calendar" loading="lazy" />
       </div>
     `;
 
@@ -153,7 +153,7 @@ async function fetchOnHomeServer() {
     getSectionThree.innerHTML = `
     <div class="card">
       <div class="logo">
-        <img src="/Images/book-icon.png" alt="book-icon" loading="lazy" />
+        <img src="Images/book-icon.png" alt="book-icon" loading="lazy" />
       </div>
       <div class="info">
         <div class="number" style="color: #2E90FA">${data.data.stats.totalLessons}</div>
@@ -162,7 +162,7 @@ async function fetchOnHomeServer() {
     </div>
     <div class="card">
       <div class="logo">
-        <img src="/Images/clock-Icon.png" alt="clock-Icon" loading="lazy" />
+        <img src="Images/clock-Icon.png" alt="clock-Icon" loading="lazy" />
       </div>
       <div class="info">
         <div class="number" style="color: #F79009">${data.data.stats.comingSoonLessons}</div>
@@ -171,7 +171,7 @@ async function fetchOnHomeServer() {
     </div>
     <div class="card">
       <div class="logo">
-        <img src="/Images/warn-Icon.png" alt="warn-Icon" loading="lazy" />
+        <img src="Images/warn-Icon.png" alt="warn-Icon" loading="lazy" />
       </div>
       <div class="info">
         <div class="number" style="color: #F04438;">${data.data.stats.remainingLessons}</div>
@@ -180,7 +180,7 @@ async function fetchOnHomeServer() {
     </div>
     <div class="card">
       <div class="logo">
-        <img src="/Images/done-icon.png" alt="done-icon" loading="lazy" />
+        <img src="Images/done-icon.png" alt="done-icon" loading="lazy" />
       </div>
       <div class="info">
         <div class="number" style="color: #17B26A">${data.data.stats.completedLessons}</div>
