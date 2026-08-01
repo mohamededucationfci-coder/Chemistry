@@ -115,7 +115,7 @@ document.forms[0].addEventListener("submit", (event) => {
       console.log(data);
       if (data.status === "success") {
         window.localStorage.setItem("Token", data.token);
-        window.location.href = "HTML/home.html";
+        window.location.href = "home.html";
       }
     } catch (error) {
       console.log(`error`);
