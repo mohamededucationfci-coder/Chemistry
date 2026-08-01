@@ -1,11 +1,11 @@
-window.addEventListener("resize", () => {
-  if (window.innerWidth <= 576) {
-    document.querySelector(".section-two").style.display = "none";
-  } else {
-    document.querySelectorAll("button")[0].style.display = "none";
-    document.querySelector(".section-two").style.display = "grid";
-  }
-});
+// window.addEventListener("resize", () => {
+//   if (window.innerWidth <= 576) {
+//     document.querySelector(".section-two").style.display = "none";
+//   } else {
+//     document.querySelectorAll("button")[0].style.display = "none";
+//     document.querySelector(".section-two").style.display = "grid";
+//   }
+// });
 
 window.addEventListener("load", () => {
   if (window.innerWidth <= 576) {
