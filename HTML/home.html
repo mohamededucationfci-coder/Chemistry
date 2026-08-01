@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"
+      defer
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="الصفحة الرئيسية للمنصة التعليمية - تصفح الدروس والاختبارات وتابع تقدمك الدراسي بسهولة."
+    />
+    <meta
+      name="keywords"
+      content="محمد صبري, البشمهندس محمد صبري, منصة محمد صبري, تعليم, ثانوية عامة, الصف الأول الثانوي, الصف الثاني الثانوي, الصف الثالث الثانوي, دروس, مراجعات, اختبارات"
+    />
+    <link rel="icon" href="/Images/icon.png" />
+    <meta name="author" content="Mohamed Shehta" />
+    <title>الرئيسية | البشمهندس محمد صبرى</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/main/generalStyle.css" />
+    <link
+      rel="stylesheet"
+      href="/CSS/main/smallScreen.css"
+      media="(max-width: 576px) "
+    />
+    <link
+      rel="stylesheet"
+      href="/CSS/main/mediumScreen.css"
+      media="(min-width: 577px) and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="/CSS/main/largeScreen.css"
+      media="(min-width: 769px)"
+    />
+    <link rel="stylesheet" href="/CSS/lessons.css">
+    <script src="/JS/home.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main id="containers">
+      <div class="main">
+        <section class="section-one"></section>
+        <section class="section-two"></section>
+        <section class="section-three"></section>
+        <section class="section-four">
+          <!-- <div class="card">
+          <h2>نصائح ذهبيه</h2>
+
+          <ul class="tips-list">
+            <li>📚 راجع كل يوم.</li>
+            <li>📝 حل الأسئلة أولًا بأول.</li>
+            <li>⏰ لا تؤجل مذاكرتك.</li>
+            <li>🎯 ركز أثناء الشرح.</li>
+            <li>💡 افهم قبل أن تحفظ.</li>
+            <li>📖 اقرأ وردك اليومي.</li>
+          </ul>
+        </div> -->
+          <div class="skitch">
+            <div class="top">
+              <div>
+                <h2>نمو الطالب في الاختبارات</h2>
+                <p>متوسط الدرجات عبر الاختبارات</p>
+              </div>
+              <div class="legend">
+                <div class="dot">
+                  <img
+                    src="/Images/greenpoint.png"
+                    alt="greenpoint"
+                    loading="lazy"
+                  />
+                  فوق المتوسط
+                </div>
+                <div class="dot">
+                  <img
+                    src="/Images/orangepoint.png"
+                    alt="orangepoint"
+                    loading="lazy"
+                  />
+                  المتوسط
+                </div>
+                <div class="dot">
+                  <img
+                    src="/Images/orangedpoint.png"
+                    alt="orangedpoint"
+                    loading="lazy"
+                  />
+                  تحت المتوسط
+                </div>
+              </div>
+            </div>
+
+            <canvas id="chart"></canvas>
+          </div>
+        </section>
+        <section class="section-five">
+          <h2>استكمل التعلم</h2>
+          <div class="cards"></div>
+        </section>
+      </div>
+    </main>
+    <aside class="aside">
+      <div class="home box" id="main">
+        <img src="/Images/main.png" alt="main" loading="lazy" />
+        <button>الرئيسية</button>
+      </div>
+
+      <div class="lesson box" id="lessons">
+        <img src="/Images/lessons.png" alt="lessons" loading="lazy" />
+        <button>دروسى</button>
+      </div>
+
+      <div class="logout box">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <button>تسجيل الخروج</button>
+      </div>
+    </aside>
+  </body>
+</html>

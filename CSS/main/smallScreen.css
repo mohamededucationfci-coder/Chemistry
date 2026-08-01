@@ -1,0 +1,137 @@
+header .logo {
+  width: 200px;
+}
+
+header .person {
+  width: 50px;
+  height: 50px;
+}
+
+.main {
+  padding-bottom: 76px;
+}
+.section-one h1 {
+  font-size: 24px;
+}
+
+.section-two {
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+}
+
+.present-value {
+  width: 90px;
+  font-size: 20px;
+  height: 90px;
+}
+
+.present-info :nth-child(1) {
+  font-size: 16px;
+}
+
+.present-info :nth-child(2),
+.present-info :nth-child(3) {
+  font-size: 14px;
+}
+
+.section-two .button {
+  width: 100%;
+}
+
+.section-three {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 4px;
+}
+
+.section-three img {
+  width: 24px;
+}
+
+.section-three .info .number {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.section-three .info .title {
+  font-size: 14px;
+}
+
+.section-four {
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(2, auto); */
+  grid-template-rows: auto;
+  /* row-gap: 16px; */
+}
+
+/* .section-four .card h2, */
+.section-four .skitch h2,
+.section-five h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* .section-four .card li,
+  .section-four .skitch p, */
+.section-four .skitch .legend {
+  font-size: 15px;
+}
+
+.section-five .cards {
+  column-gap: 8px;
+}
+
+.section-five .cards .container {
+  padding: 8px;
+  row-gap: 8px;
+}
+
+video {
+  width: 150px;
+  height: 77px;
+}
+
+.section-five .cards .container h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.section-five .cards .container button {
+  font-size: 14px;
+}
+
+.section-five .cards .container p {
+  font-size: 14px;
+}
+
+aside {
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+aside div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 2px;
+  justify-items: center;
+  align-content: center;
+}
+
+aside button {
+  font-size: 12px;
+}
+
+.style {
+  background-color: #ebf3ff;
+  border-top: 4px solid #003e9c;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 80%;
+}

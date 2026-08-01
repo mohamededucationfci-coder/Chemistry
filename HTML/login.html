@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="سجل الدخول إلى المنصة التعليمية للوصول إلى الدروس والاختبارات ومتابعة تقدمك."
+    />
+    <meta />
+
+    <meta
+      name="keywords"
+      content="محمد صبري, البشمهندس فى الكيمياء,البشمهندس محمد صبري, منصة محمد صبري, تعليم, ثانوية عامة, الصف الأول الثانوي, الصف الثاني الثانوي, الصف الثالث الثانوي, دروس, مراجعات, اختبارات"
+    />
+    <link
+      rel="icon"
+      href="/Images/icon.png"
+    />
+    <meta name="author" content="Mohamed Shehta" />
+    <title>تسجيل الدخول | البشمهندس محمد صبرى</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <script src="/JS/login.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <div class="content-box">
+          <div class="box-logo">
+            <img src="/Images/logo.png" alt="logo" loading="lazy" />
+          </div>
+          <div class="content">
+            <h1>مرحبًا بعودتك</h1>
+            <p>سجّل الدخول لمتابعة جلساتك المخبرية</p>
+          </div>
+        </div>
+        <div class="inputs-box">
+          <div class="input-one">
+            <label for="n">رقم الهاتف</label>
+            <div class="input-box">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <input
+                type="tel"
+                name="number"
+                id="n"
+                placeholder="ادخل رقم الهاتف"
+              />
+            </div>
+          </div>
+          <div class="input-two">
+            <label for="passwor">كلمة المرور</label>
+            <div class="input-box">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <input
+                type="password"
+                name="password"
+                id="passwor"
+                placeholder="ادخل كلمة المرور"
+              />
+            </div>
+            <div class="warn"></div>
+          </div>
+        </div>
+        <div class="section-option">
+          <div><button type="submit">تسجيل الدخول</button></div>
+          <div class="option">or</div>
+          <div class="option-two">
+            <span>ليس لديك حساب؟</span>
+            <a href="/HTML/index.html">انشاء حساب</a>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

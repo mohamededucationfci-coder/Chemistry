@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="أنشئ حسابًا جديدًا في منصة البشمهندس محمد صبري للاستفادة من الدروس والاختبارات التعليمية."
+    />
+    <meta
+      name="keywords"
+      content="محمد صبري, البشمهندس محمد صبري, منصة محمد صبري, تعليم, ثانوية عامة, الصف الأول الثانوي, الصف الثاني الثانوي, الصف ال   ثالث الثانوي, دروس, مراجعات, اختبارات"
+    />
+    <link rel="icon" href="/Images/icon.png" />
+    <meta name="author" content="Mohamed Shehta" />
+    <title>انشاء الحساب | البشمهندس محمد صبرى</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/register.css" />
+    <script src="/JS/register.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <div class="box-logo">
+          <img src="/Images/logo.png" alt="logo" loading="lazy" />
+        </div>
+        <div class="container-data">
+          <div class="box-content">
+            <h1>انشئ حسابك</h1>
+            <p>
+              ابدأ رحلتك في الكيمياء الحديثة وسجّل الدخول<br />
+              لمتابعة جلساتك المخبرية
+            </p>
+          </div>
+          <div class="box-input-one">
+            <label for="n">الاسم</label>
+            <div class="input-box">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <input type="text" id="n" placeholder="الاسم الاول" name="name" />
+            </div>
+            <div class="error-name"></div>
+          </div>
+          <div class="box-input-two">
+            <label for="fn">الاسم الرباعى</label>
+            <div class="input-box">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <input
+                type="text"
+                id="fn"
+                placeholder="الاسم رباعى"
+                name="full-name"
+              />
+            </div>
+            <div class="error-name"></div>
+          </div>
+          <div class="box-input-three">
+            <label for="p">رقم الهاتف</label>
+            <div class="input-box">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <input
+                type="tel"
+                id="p"
+                placeholder="ادخل رقم الهاتف"
+                name="phone"
+              />
+            </div>
+            <div class="error-phone"></div>
+          </div>
+          <div>
+            <button type="button">&lt; التالي</button>
+          </div>
+        </div>
+        <div class="section-two">
+          <div class="box-input-four">
+            <label for="pass">كلمة السر</label>
+            <div class="input-box">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <input
+                type="text"
+                name="password"
+                placeholder="ادخل كلمة السر"
+                id="pass"
+              />
+            </div>
+            <div class="password"></div>
+          </div>
+          <div class="box-input-five">
+            <label for="passwo">تأكيد كلمه السر</label>
+            <div class="input-box">
+              <i class="fa-solid fa-lock" aria-hidden="true"></i>
+              <input
+                type="text"
+                name="password"
+                placeholder="تأكيد كلمة السر"
+                id="passwo"
+              />
+            </div>
+            <div class="error-password"></div>
+          </div>
+          <div class="grades">
+            <label>المستوى الاكاديمي</label>
+            <div
+              class="grade one"
+              role="checkbox"
+              aria-checked="true"
+              tabindex="0"
+            >
+              الصف الاول الثانوى
+            </div>
+            <div class="grade two" tabindex="0">الصف الثانى الثانوى</div>
+            <div class="grade three" tabindex="0">الصف الثالث الثانوى</div>
+          </div>
+          <div class="sign-up">
+            <button type="submit">انشاء حساب</button>
+          </div>
+        </div>
+        <div class="another-option">
+          <div class="option-word">or</div>
+          <div class="option-two">
+            <span> هل لديك حساب بالفعل؟ </span>
+            <a href="login.html">ادخل الى حسابك الان</a>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

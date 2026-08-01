@@ -1,0 +1,148 @@
+header .logo {
+  width: 200px;
+}
+
+header .person {
+  width: 50px;
+  height: 50px;
+}
+
+.section-two {
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+}
+
+.present-value {
+  width: 120px;
+  font-size: 30px;
+  height: 120px;
+}
+
+.present-info :nth-child(1) {
+  font-size: 19px;
+}
+
+.present-info :nth-child(2),
+.present-info :nth-child(3) {
+  font-size: 14px;
+}
+
+.section-two .button {
+  width: 170px;
+  height: 40px;
+}
+
+.section-three {
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 8px;
+}
+
+.section-three img {
+  width: 35px;
+}
+
+.section-three .info .number {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.section-three .info .title {
+  font-size: 16px;
+}
+
+.section-four {
+  /* grid-template-columns: repeat(2, auto); */
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  /* column-gap: 16px; */
+}
+
+/* .section-four .card h2, */
+.section-four .skitch h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* .section-four .card li,
+  .section-four .skitch p, */
+.section-four .skitch .legend {
+  font-size: 16px;
+}
+
+.section-five .cards {
+  column-gap: 16px;
+}
+
+.section-five .cards .container {
+  padding: 10px;
+  row-gap: 12px;
+}
+video {
+  width: 250px;
+  height: 120px;
+}
+
+.section-five .cards .container h3 {
+  font-size: 14px;
+}
+
+.section-five .cards .container button {
+  font-size: 16px;
+}
+
+.section-five .cards .container p {
+  font-size: 16px;
+}
+
+header div {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  direction: ltr;
+  align-items: center;
+}
+
+header .hamburger {
+  display: block;
+  font-size: 40px;
+  color: white;
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+aside {
+  position: absolute;
+  top: 95px;
+  width: 180px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  padding: 16px 0;
+  box-shadow: -5px 5px 15px rgba(222, 222, 222, 0.8);
+  border-bottom-left-radius: 16px;
+}
+
+aside div {
+  height: 40px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  justify-items: flex-start;
+  align-items: center;
+  padding: 0 16px;
+}
+
+button {
+  font-size: 16px;
+}
+
+.style {
+  background-color: #ebf3ff;
+  border-right: 4px solid #003e9c;
+  border-radius: 16px;
+  width: 100%;
+}

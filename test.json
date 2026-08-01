@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "data": {
+    "user": {
+      "name": "أحمد",
+      "avatar": "/images/user.png",
+      "coins": 120,
+      "date": {
+        "day": "الأربعاء",
+        "fullDate": "12 أكتوبر"
+      }
+    },
+
+    "progress": {
+      "percentage": 60,
+      "completedLectures": 18,
+      "totalLectures": 30,
+      "completedHours": 12
+    },
+
+    "statistics": {
+      "videos": 15,
+      "exams": 5,
+      "assignments": 10,
+      "remainingAssignments": 4
+    },
+
+    "studentGrowth": [
+      {
+        "month": "يناير",
+        "value": 55
+      },
+      {
+        "month": "فبراير",
+        "value": 68
+      },
+      {
+        "month": "مارس",
+        "value": 80
+      },
+      {
+        "month": "أبريل",
+        "value": 90
+      },
+      {
+        "month": "مايو",
+        "value": 90
+      },
+      {
+        "month": "يونيو",
+        "value": 100
+      }
+    ],
+
+    "latestActivity": [
+      {
+        "id": 1,
+        "title": "أكملت محاضرة مقدمة في الكيمياء الذرية",
+        "time": "منذ ساعتين",
+        "type": "lecture"
+      },
+      {
+        "id": 2,
+        "title": "تم ربح 100 كوين",
+        "time": "منذ 3 ساعات",
+        "type": "reward"
+      },
+      {
+        "id": 3,
+        "title": "أجريت اختبار الفصل الأول",
+        "time": "منذ يوم",
+        "type": "exam"
+      },
+      {
+        "id": 4,
+        "title": "بدأت فصل الكيمياء الكهربائية",
+        "time": "منذ 3 أيام",
+        "type": "course"
+      }
+    ],
+
+    "continueLearning": [
+      {
+        "id": 1,
+        "title": "الباب الأول - الدرس الثالث",
+        "thumbnail": "/images/course1.jpg",
+        "progress": 100,
+        "duration": "45 دقيقة",
+        "status": "مكتمل",
+        "button": "إعادة المشاهدة"
+      },
+      {
+        "id": 2,
+        "title": "الباب الأول - الدرس الثالث",
+        "thumbnail": "/images/course2.jpg",
+        "progress": 100,
+        "duration": "40 دقيقة",
+        "status": "مكتمل",
+        "button": "إعادة المشاهدة"
+      },
+      {
+        "id": 3,
+        "title": "الكيمياء العضوية - الدرس الثالث",
+        "thumbnail": "/images/course3.jpg",
+        "progress": 75,
+        "duration": "45 دقيقة",
+        "status": "متبقي 15 دقيقة",
+        "button": "استكمال المشاهدة"
+      }
+    ]
+  }
+}
