@@ -7,20 +7,31 @@ window.addEventListener("resize", () => {
   }
 });
 
-window.addEventListener("load", () => {
+let currentStep = 1;
+
+function updateLayout() {
   if (window.innerWidth <= 576) {
-    document.querySelector(".section-two").style.display = "none";
+    if (currentStep === 1) {
+      document.querySelector(".container-data").style.display = "grid";
+      document.querySelector(".section-two").style.display = "none";
+      document.querySelectorAll("button")[0].style.display = "block";
+    } else {
+      document.querySelector(".container-data").style.display = "none";
+      document.querySelector(".section-two").style.display = "grid";
+    }
   } else {
-    document.querySelectorAll("button")[0].style.display = "none";
+    document.querySelector(".container-data").style.display = "grid";
     document.querySelector(".section-two").style.display = "grid";
+    document.querySelectorAll("button")[0].style.display = "none";
   }
-});
+}
 
-const nextBtn = document.querySelector('button[type="button"]');
+window.addEventListener("load", updateLayout);
+window.addEventListener("resize", updateLayout);
 
-nextBtn.addEventListener("click", () => {
-  document.querySelector(".container-data").style.display = "none";
-  document.querySelector(".section-two").style.display = "grid";
+document.querySelectorAll("button")[0].addEventListener("click", () => {
+  currentStep = 2;
+  updateLayout();
 });
 
 document.querySelectorAll("input").forEach(function (input) {

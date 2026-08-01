@@ -263,7 +263,7 @@ Extra Large Devices (Desktops)  */
   }
 
   .section-two {
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-areas:
       "password confirmpassword"
