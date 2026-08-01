@@ -7,31 +7,20 @@ window.addEventListener("resize", () => {
   }
 });
 
-let currentStep = 1;
-
-function updateLayout() {
+window.addEventListener("load", () => {
   if (window.innerWidth <= 576) {
-    if (currentStep === 1) {
-      document.querySelector(".container-data").style.display = "grid";
-      document.querySelector(".section-two").style.display = "none";
-      document.querySelectorAll("button")[0].style.display = "block";
-    } else {
-      document.querySelector(".container-data").style.display = "none";
-      document.querySelector(".section-two").style.display = "grid";
-    }
+    document.querySelector(".section-two").style.display = "none";
   } else {
-    document.querySelector(".container-data").style.display = "grid";
-    document.querySelector(".section-two").style.display = "grid";
     document.querySelectorAll("button")[0].style.display = "none";
+    document.querySelector(".section-two").style.display = "grid";
   }
-}
+});
 
-window.addEventListener("load", updateLayout);
-window.addEventListener("resize", updateLayout);
+const nextBtn = document.querySelector('button[type="button"]');
 
-document.querySelectorAll("button")[0].addEventListener("click", () => {
-  currentStep = 2;
-  updateLayout();
+nextBtn.addEventListener("click", () => {
+  document.querySelector(".container-data").style.display = "none";
+  document.querySelector(".section-two").style.display = "grid";
 });
 
 document.querySelectorAll("input").forEach(function (input) {
