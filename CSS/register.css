@@ -16,8 +16,8 @@ body {
   display: grid;
   place-items: center;
   background-image:
-    url("/Images/backgroundbody.png"), url("/Images/backgroundbody.png"),
-    url("/Images/backgroundbody.png");
+    url("Images/backgroundbody.png"), url("Images/backgroundbody.png"),
+    url("Images/backgroundbody.png");
 }
 main {
   width: 100%;
