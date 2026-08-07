@@ -1,0 +1,393 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  font-family: "cairo", Arial, Helvetica, sans-serif;
+  direction: rtl;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #fafcff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: ltr;
+  height: 95px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px #e2e2e2;
+}
+
+header .hamburger {
+  display: none;
+}
+
+main {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 10px;
+}
+
+.top-section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+.box-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 10px;
+}
+
+.box-info h1 {
+  color: #0065ff;
+}
+
+.data {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1fr);
+  border: 2px solid #0065ff;
+  border-radius: 16px;
+}
+
+.data > div {
+  display: grid;
+  place-items: center;
+  padding: 8px 0;
+}
+
+.data .num {
+  font-weight: bold;
+  color: #0065ff;
+}
+
+.video {
+  background-color: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+}
+
+.video video {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+}
+
+.video p {
+  padding-right: 10px;
+}
+
+.data .title,
+p {
+  opacity: 0.5;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  row-gap: 10px;
+}
+
+.section-attachments {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 10px;
+}
+
+.hidden {
+  display: grid;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.section-title,
+.section-video,
+.section-summary,
+.section-question,
+.section-solve {
+  background-color: #fafcff;
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+  padding: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.box-data {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "icon title";
+  align-content: center;
+  column-gap: 8px;
+  /* width: auto; */
+  align-items: center;
+}
+
+.data .num {
+  font-size: 12px;
+}
+
+.box-data img,
+.box-data span {
+  grid-area: icon;
+}
+
+.box-data div {
+  grid-area: title;
+}
+
+.box-data span {
+  background-color: white;
+  border: 2px solid #0065ff;
+  color: #0065ff;
+  border-radius: 16px;
+}
+
+.section-title .buttons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.buttons :nth-child(1),
+.section-question a {
+  background-color: #fff8f3;
+  border-color: #e8660f;
+  color: #e8660f;
+}
+
+.buttons :nth-child(2),
+.section-solve a {
+  background-color: #fcf9ff;
+  border-color: #7134c0;
+  color: #7134c0;
+}
+
+.section-video a {
+  background-color: #fefffd;
+  border-color: #17b26a;
+  color: #17b26a;
+}
+
+.section-summary a {
+  background-color: #f6faff;
+  border-color: #2e90fa;
+  color: #2e90fa;
+}
+
+.buttons div,
+.container a {
+  border: 2px solid;
+  border-radius: 16px;
+}
+
+.section-title .buttons,
+.section-video a,
+.section-summary a,
+.section-question a,
+.section-solve a {
+  justify-self: flex-end;
+}
+
+@media (max-width: 576px) {
+  header .logo {
+    width: 200px;
+  }
+
+  header .person {
+    width: 50px;
+    height: 50px;
+  }
+
+  .video video {
+    height: 110px;
+  }
+
+  .box-info h1 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .box-info p,
+  .video p,
+  .data .num,
+  .container p {
+    font-size: 12px;
+  }
+
+  .data .title {
+    font-size: 9px;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .box-data span {
+    padding: 0px 13px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .buttons div,
+  .section-video a,
+  .section-summary a,
+  .section-question a,
+  .section-solve a {
+    padding: 0px 8px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  header .logo {
+    width: 200px;
+  }
+
+  header .person {
+    width: 50px;
+    height: 50px;
+  }
+
+  .video video {
+    height: 180px;
+  }
+
+  .box-info h1 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .box-info p,
+  .video p,
+  .data .num,
+  .container p {
+    font-size: 12px;
+  }
+
+  .data .title {
+    font-size: 9px;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .box-data span {
+    padding: 0px 13px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .buttons div,
+  .section-video a,
+  .section-summary a,
+  .section-question a,
+  .section-solve a {
+    padding: 0px 8px;
+  }
+}
+
+@media (min-width: 769px) {
+  header .logo {
+    width: 250px;
+  }
+
+  header .person {
+    width: 70px;
+    height: 70px;
+  }
+
+  .box-info {
+    max-width: 500px;
+  }
+
+  .box-info h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .video video {
+    width: 400px;
+    height: 280px;
+  }
+
+  .box-info p,
+  .video p,
+  .data .num,
+  .container p,
+  .data .title {
+    font-size: 24px;
+  }
+
+  .data .num {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .box-data span {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .buttons div,
+  .section-video a,
+  .section-summary a,
+  .section-question a,
+  .section-solve a {
+    padding: 8px 20px;
+  }
+}

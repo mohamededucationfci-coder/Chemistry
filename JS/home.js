@@ -1,5 +1,4 @@
 const token = window.localStorage.getItem("Token");
-console.log(token);
 if (!token) {
   window.location.href = "login.html";
 }
@@ -52,7 +51,6 @@ if (true) {
               throw new Error("Failed to fetch homepage");
             }
             let data = await response.json();
-            console.log(data);
             let container = document.createElement("div");
             container.className = "courses-container";
             for (let i = 1; i < data.data.data.length; i++) {
@@ -61,12 +59,18 @@ if (true) {
                     <img src=${data.data.data[i].thumbnail} alt="this is img of courses" loading="lazy"></img>
                     <h3>${data.data.data[i].title}</h3>
                     <p>${data.data.data[i].description}</p>
-                    <button id=${data.data.data[i]._id}>الدخول للكورس</button>
+                    <button id=${data.data.data[i]._id} class="btn-enter">الدخول للكورس</button>
                 </div>
           `;
             }
             document.body.children[1].innerHTML = ``;
             document.body.children[1].appendChild(container);
+            document.querySelectorAll(".btn-enter").forEach((ele) => {
+              ele.addEventListener("click", () => {
+                window.location.href = `/lecture.html`;
+                window.localStorage.setItem("_id", ele.id);
+              });
+            });
           } catch (error) {
             console.log(error);
           }

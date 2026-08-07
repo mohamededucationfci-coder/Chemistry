@@ -23,11 +23,11 @@
 
 .courses-container button {
   background-color: #0065ff;
-  color: white;
   border-radius: 16px;
   font-weight: bold;
   width: 100%;
   padding: 4px 0px;
+  color: white;
   border: none;
 }
 

@@ -12,7 +12,6 @@
 }
 
 :root {
-  --colorHeader: black;
   --mainColr: #ffffff;
   --colorBody: #fafcff;
 }
@@ -37,13 +36,13 @@ body {
 /* style head */
 
 header {
-  background-color: var(--colorHeader);
   grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
   direction: ltr;
   height: 95px;
+  box-shadow: 0 2px 8px #e2e2e2;
   padding: 16px 20px;
 }
 
