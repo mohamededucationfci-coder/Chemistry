@@ -40,23 +40,23 @@ let fetchOnLectureServer = async () => {
             <div class="buttons">
               <div>فيديو</div>
               <div>pdf</div>
-              <img data-id="${data.data.data.lessons[i]._id}" src="/Images/arrow.png" loading= "lazy" alt="arrow" class="arrow">
+              <img data-id="${data.data.data.lessons[i]._id}" src="Images/arrow.png" loading= "lazy" alt="arrow" class="arrow">
             </div>
           </div>
           <div class="section-attachments" data-id=${data.data.data.lessons[i]._id} >
             <div class="section-video">
               <div class="box-data">
-                <img  src="/Images/videoIcon.png" loading= "lazy" alt="videoIcon">
+                <img  src="Images/videoIcon.png" loading= "lazy" alt="videoIcon">
                 <div>
                   <h3>فيديو المحاضرة</h3>
                   <p>الجودة HD</p>
                 </div>
               </div>
-              <a data-id=${data.data.data.lessons[i]._id} href="/video.html" class="video-lec" data-url=${data.data.data.lessons[i].videoUrl}>مشاهدة</a>
+              <a data-id=${data.data.data.lessons[i]._id} href="video.html" class="video-lec" data-url=${data.data.data.lessons[i].videoUrl}>مشاهدة</a>
             </div>
             <div class="section-summary">
               <div class="box-data">
-                <img src="/Images/summaryIcon.png" loading= "lazy" alt="summaryIcon">
+                <img src="Images/summaryIcon.png" loading= "lazy" alt="summaryIcon">
                 <div>
                   <h3>ملخص المحاضرة </h3>
                   <p> pdf.صفحات</p>
@@ -66,7 +66,7 @@ let fetchOnLectureServer = async () => {
             </div>
             <div class="section-question">
               <div class="box-data">
-                <img src="/Images/QuestionIcon.png" loading= "lazy" alt="QuestionIcon">
+                <img src="Images/QuestionIcon.png" loading= "lazy" alt="QuestionIcon">
                 <div>
                   <h3>اسئلة تدريبية</h3>
                   <p> صفحات pdf</p>
@@ -76,7 +76,7 @@ let fetchOnLectureServer = async () => {
             </div>
             <div class="section-solve">
               <div class="box-data">
-                <img src="/Images/solveIcon.png" loading= "lazy" alt="solveIcon">
+                <img src="Images/solveIcon.png" loading= "lazy" alt="solveIcon">
                 <div>
                   <h3>حل اسئلة</h3>
                   <p> صفحات pdf</p>
