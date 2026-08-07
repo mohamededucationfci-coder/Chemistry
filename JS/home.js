@@ -68,7 +68,7 @@ if (true) {
             document.querySelectorAll(".btn-enter").forEach((ele) => {
               ele.addEventListener("click", () => {
                 window.localStorage.setItem("_id", ele.id);
-                window.location.href = `/lecture.html`;
+                window.location.href = `lecture.html`;
               });
             });
           } catch (error) {
