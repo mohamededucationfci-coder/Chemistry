@@ -29,6 +29,7 @@ let fetchOnLectureServer = async () => {
       let content = ``;
       for (let i = 0; i < data.data.data.lessons.length; i++) {
         content += `
+        <div class="box">
           <div class="section-title">
             <div class="box-data">
               <span>${i + 1}</span>
@@ -85,6 +86,7 @@ let fetchOnLectureServer = async () => {
               <a href="">تحميل</a>
             </div>
           </div>
+        </div>
         `;
       }
 

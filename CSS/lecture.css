@@ -101,6 +101,14 @@ p {
 }
 
 .container {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 10px;
+}
+
+.box {
   background-color: white;
   border: 1px solid #e2e2e2;
   border-radius: 16px;
@@ -108,7 +116,6 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
-  row-gap: 10px;
 }
 
 .section-attachments {
@@ -116,6 +123,7 @@ p {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
   row-gap: 10px;
+  margin-top: 10px;
 }
 
 .hidden {
