@@ -42,20 +42,9 @@ main {
 
 .top-section {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: 1fr;
-  column-gap: 10px;
-  justify-content: space-between;
 }
 
-.box-info {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  row-gap: 10px;
-}
-
-.box-info h1 {
+.top-section h1 {
   color: #0065ff;
 }
 
@@ -63,7 +52,7 @@ main {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(1fr);
+  grid-template-rows: auto;
   border: 2px solid #0065ff;
   border-radius: 16px;
 }
@@ -71,12 +60,37 @@ main {
 .data > div {
   display: grid;
   place-items: center;
-  padding: 8px 0;
 }
 
 .data .num {
   font-weight: bold;
   color: #0065ff;
+}
+
+.video-num,
+.pdf-num {
+  position: relative;
+}
+
+.video-num::before,
+.pdf-num::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #0065ff;
+  left: 0;
+  top: 0;
+}
+
+.video-num::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #0065ff;
+  right: 0;
+  top: 0;
 }
 
 .video {
@@ -239,20 +253,50 @@ p {
     height: 50px;
   }
 
-  .video video {
-    height: 110px;
+  .top-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "head" "video" "description" "num";
+    row-gap: 10px;
   }
 
-  .box-info h1 {
+  h1 {
+    grid-area: head;
+  }
+
+  .video {
+    grid-area: video;
+  }
+
+  .top-section p {
+    grid-area: description;
+  }
+
+  .top-section .data {
+    grid-area: num;
+  }
+
+  .video video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .top-section h1 {
     font-size: 16px;
     font-weight: bold;
   }
 
-  .box-info p,
+  .top-section p,
   .video p,
   .data .num,
   .container p {
     font-size: 12px;
+  }
+
+  .data > div {
+    padding: 8px 0;
   }
 
   .data .title {
@@ -281,6 +325,7 @@ p {
   .section-question a,
   .section-solve a {
     padding: 0px 8px;
+    font-size: 12px;
   }
 }
 
@@ -294,31 +339,69 @@ p {
     height: 50px;
   }
 
-  .video video {
-    height: 180px;
+  main {
+    padding: 32px;
   }
 
-  .box-info h1 {
-    font-size: 16px;
+  .top-section {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "head video" "description video" "num video";
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  h1 {
+    grid-area: head;
+  }
+
+  .video {
+    grid-area: video;
+  }
+
+  .top-section p {
+    grid-area: description;
+    max-width: 400px;
+  }
+
+  .top-section .data {
+    grid-area: num;
+  }
+
+  .top-section h1 {
+    font-size: 28px;
     font-weight: bold;
   }
 
-  .box-info p,
+  .video {
+    width: 300px;
+    height: 280px;
+    max-width: 100%;
+  }
+
+  .video video {
+    width: 300px;
+    height: 220px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .top-section p,
   .video p,
   .data .num,
   .container p {
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .data .title {
-    font-size: 9px;
+    font-size: 15px;
   }
 
   h2 {
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
   }
-
+/* // */
   .box-data span {
     padding: 0px 13px;
     font-size: 16px;
@@ -327,7 +410,7 @@ p {
 
   h3 {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 17px;
   }
 
   .buttons div,
@@ -335,7 +418,8 @@ p {
   .section-summary a,
   .section-question a,
   .section-solve a {
-    padding: 0px 8px;
+    padding: 4px 15px;
+    font-size: 18px;
   }
 }
 
@@ -349,21 +433,54 @@ p {
     height: 70px;
   }
 
-  .box-info {
+  main {
+    padding: 32px;
+  }
+
+  .top-section {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "head video" "description video" "num video";
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  h1 {
+    grid-area: head;
+  }
+
+  .video {
+    grid-area: video;
+  }
+
+  .top-section p {
+    grid-area: description;
     max-width: 500px;
   }
 
-  .box-info h1 {
+  .top-section .data {
+    grid-area: num;
+  }
+
+  .top-section h1 {
     font-size: 32px;
     font-weight: bold;
   }
 
-  .video video {
+  .video {
     width: 400px;
     height: 280px;
+    max-width: 100%;
   }
 
-  .box-info p,
+  .video video {
+    width: 400px;
+    height: 220px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .top-section p,
   .video p,
   .data .num,
   .container p,
@@ -397,5 +514,6 @@ p {
   .section-question a,
   .section-solve a {
     padding: 8px 20px;
+    font-size: 24px;
   }
 }

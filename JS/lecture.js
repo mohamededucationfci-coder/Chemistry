@@ -25,7 +25,7 @@ let fetchOnLectureServer = async () => {
     );
     if (response.ok) {
       let data = await response.json();
-      // console.log(data);
+      console.log(data);
       let content = ``;
       for (let i = 0; i < data.data.data.lessons.length; i++) {
         content += `
@@ -63,7 +63,12 @@ let fetchOnLectureServer = async () => {
                   <p> pdf.صفحات</p>
                 </div>
               </div>
-              <a href=${data.data.data.lessons[i].summaryPdf}>تحميل</a>
+              <a href="${data.data.data.lessons[i].summaryPdf.replace(
+                "/raw/upload/",
+                "/raw/upload/fl_attachment/",
+              )}" >
+                تحميل
+              </a>
             </div>
             <div class="section-question">
               <div class="box-data">
@@ -73,7 +78,12 @@ let fetchOnLectureServer = async () => {
                   <p> صفحات pdf</p>
                 </div>
               </div>
-              <a href="">تحميل</a>
+              <a href="${data.data.data.lessons[i].questionsPdf.replace(
+                "/raw/upload/",
+                "/raw/upload/fl_attachment/",
+              )}">
+                تحميل
+              </a>
             </div>
             <div class="section-solve">
               <div class="box-data">
@@ -83,7 +93,12 @@ let fetchOnLectureServer = async () => {
                   <p> صفحات pdf</p>
                 </div>
               </div>
-              <a href="">تحميل</a>
+              <a href="${data.data.data.lessons[i].solutionsPdf.replace(
+                "/raw/upload/",
+                "/raw/upload/fl_attachment/",
+              )}">
+                تحميل
+              </a>
             </div>
           </div>
         </div>
@@ -92,26 +107,24 @@ let fetchOnLectureServer = async () => {
 
       document.body.children[1].innerHTML = `
         <div class="top-section">
-          <div class="box-info">
-            <h1>${data.data.data.title}</h1>
-            <p>${data.data.data.description}</p>
-            <div class="data">
-              <div>
-                <div class="num">${data.data.data.num_lec}</div>
-                <div class="title">المحاضرات</div>
-              </div>
-              <div>
-                <div class="num">${data.data.data.num_Video}</div>
-                <div class="title">فيديو</div>
-              </div>
-              <div>
-                <div class="num">0</div>
-                <div class="title">اختبار</div>
-              </div>
-              <div>
-                <div class="num">0</div>
-                <div class="title">مدة المحتوى</div>
-              </div>
+          <h1>${data.data.data.title}</h1>
+          <p>${data.data.data.description}</p>
+          <div class="data">
+            <div>
+              <div class="num">${data.data.data.num_lec}</div>
+              <div class="title">المحاضرات</div>
+            </div>
+            <div class="video-num">
+              <div class="num">${data.data.data.num_Video}</div>
+              <div class="title">فيديو</div>
+            </div>
+            <div class="pdf-num">
+              <div class="num">${data.data.data.num_pdf}</div>
+              <div class="title">pdf</div>
+            </div>
+            <div>
+              <div class="num">${Math.round(parseInt(data.data.data.totalDuration))}</div>
+              <div class="title">ساعة </div>
             </div>
           </div>
           <div class="video">
